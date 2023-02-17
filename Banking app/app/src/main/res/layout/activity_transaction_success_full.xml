@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF6F5F5"
+    android:foregroundTint="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".TransactionSuccessFull">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/montserrat"
+        android:text="TRANSACTION SUCCESSFUL"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/sucesfullsplash">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="false"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="THANK YOU"
+        android:textAlignment="center"
+        android:textColor="#1A681D"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_back_to_home"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="@color/green"
+        android:elevation="12dp"
+        android:fontFamily="@font/montserrat"
+        android:lineSpacingExtra="24sp"
+        android:text="RETURN"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="341dp"
+
+        />
+
+
+</LinearLayout>
